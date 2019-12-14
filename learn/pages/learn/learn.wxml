@@ -1,2 +1,42 @@
 <!--pages/learn/learn.wxml-->
-<text>pages/learn/learn.wxml</text>
+<!-- 1.基本使用方法 -->
+<text>pages/learn/learn.wxml\n</text>
+<!-- text相当于span 需要加\n换行 -->
+<text>hello word</text>
+
+<!--2.selectable=“{{}}” -->
+<text selectable="{{false}}">长按不能选中\n</text>
+
+<text selectable="{{true}}">长按能选中\n</text>
+<!-- 测试长按能不能选中，默认值 -->
+<text>长按能不能选中\n</text>
+<!-- 默认长按不能选中值为false -->
+
+<text selectable="false">你好，大鱼！\n</text>
+<text selectable="true">你好，猴哥！\n</text>
+<!-- 都可以选中，因为把这两当成字符串处理，为true了 -->
+
+<!-- 下面用空和其它字符串验证 -->
+<text selectable="">什么都没写\n</text>
+<!-- 不能选中 -->
+
+<text selectable="123">数字123</text>
+<!-- 可以选中 -->
+
+<!-- 3.space的使用方法 -->
+<!-- nbsp是默认空格大小
+     ensp是中文字符的一半大小
+     emsp是中文字符的大小 -->
+<text>hello word\n</text>
+<text space="nbsp">hello word\n</text>
+<text space="ensp">hello word\n</text>
+<text space="emsp">hello word\n</text>
+
+<!-- decode是否解码，默认是否 -->
+<!-- &gt; >
+     &lt; <
+     &apos; '  -->
+
+<text decode="{{true}}">5 &gt; 3\n</text>
+<text decode>5 &gt; 3\n&lt;\n&apos;\n</text>
+<text>5 &gt; 3\n</text>

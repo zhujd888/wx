@@ -1,0 +1,26 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button基本用法 -->
+<button>按钮</button>
+<button>按钮</button>
+<!-- 独占一行，块级元素 -->
+
+<!--2.size属性：mini -->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+<!-- 变成行内元素 -->
+
+<!-- 3.type属性：primary（绿色）,default（白色）,warn（红色）按钮颜色 -->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 4.plain镂空效果 -->
+<button size="mini" plain>按钮</button>
+<!-- 5.disabled不可选状态 默认是false 可以选用 -->
+<button size="mini" disabled>按钮</button>
+
+<!-- 6.loading名称前是否带loading图标 -->
+<!-- <button size="mini" loading>按钮</button> -->
+
+<!-- 7.hover-class按钮按下去的颜色和文字颜色 -->
+<button hover-class="pressed">按钮</button>
