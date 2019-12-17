@@ -1,0 +1,5 @@
+<!--components/my-ctrol/my-ctrol.wxml-->
+<text>components/my-ctrol/my-ctrol.wxml</text>
+<view class="frame">
+<input value="请输入："></input>
+</view>

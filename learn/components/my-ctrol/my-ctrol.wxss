@@ -1,0 +1,5 @@
+/* components/my-ctrol/my-ctrol.wxss */
+.frame{
+  color:blue;
+  border-style: solid
+}

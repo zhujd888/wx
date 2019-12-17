@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "my-head":"/components/my-head/my-head",
+    "my-ctrol":"/components/my-ctrol/my-ctrol"
+  }
 }

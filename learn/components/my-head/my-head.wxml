@@ -1,0 +1,22 @@
+<!--components/my-head.wxml-->
+<view class="tab-control">
+<!-- <view class="tab-item">流行</view>
+<view class="tab-item">分类</view>
+<view class="tab-item">精选</view> -->
+
+<!-- 流行，分类，精选。一直挤在一起，my-head.wxss怎么设置都不行，最后把引用该组件的页面的上一级<view class="container">的class的.container选择器删除掉,显示正常。
+---------现在没挤在一起，是因为text设置了下划线padding,下面的线把text撑开了。
+设置了display:flex,包裹的下级也有display:flex。
+则，下级的元素width会缩紧，100%是不管用的，必须设置固定宽度，下级的元素才能正常布局。 -->
+
+<!-- wx:key="{{index}}"会有警告，去掉大括号。 -->
+<!-- wx:for-index="idx" index重命名 -->
+    <block wx:for="{{title}}" wx:for-index="idx" wx:key="idx" >
+        <view class="tab-item" bind:tap="selectTab1" data-index="{{idx}}">
+         <text class="text-item {{currentIndex==idx?'active':''}}">{{item}}</text>
+        </view>
+     </block>
+</view>
+<view>{{see}}</view> 
+
+<!-- 事件传递，通过bind:tap把组件的点击事件传递给页面。 -->

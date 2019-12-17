@@ -1,1 +1,17 @@
 /* pages/learn/learn.wxss */
+.container{
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around
+}
+
+.blank{
+  height:12px
+}
+
+.text-item{
+  color: rgb(98, 14, 235);
+  padding: 20rpx 16rpx;
+  border-bottom: 6rpx solid rgb(252, 4, 4);
+}

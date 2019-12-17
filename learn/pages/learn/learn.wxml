@@ -1,2 +1,33 @@
 <!--pages/learn/learn.wxml-->
 <text>pages/learn/learn.wxml</text>
+
+<!-- 页面向组件传递数据 -->
+<!-- 1.新建components，组件名字为my-head.
+2.组件.wxml内做{{}}包裹传递数据变量。
+3.在组件.js内定义数据变量的类型，写在prorerties内。
+例如：porperties:{
+see：String
+}注意String开头大写。
+4.注册用到该组件的页面的json中，    "my-head":"/components/my-head/my-head"
+5.在页面标注，该组件的位置，并传递数据。 -->
+<view class="container">
+<!-- <view wx:for="{{title}}">{{item}}</view> -->
+<!-- ---------从页面传递数据给组件--------- -->
+<my-head title="{{title}}"/>
+<view>
+厉害了
+</view>
+<!-- <my-head see="看，可以吧！"/> -->
+</view>
+<!-- 第二次实验组件化 -->
+
+<view>
+<my-ctrol/>
+</view>
+<view class="blank">
+
+</view>
+
+<!-- 在这里selectTab和之前的selectTab1没有关系，可以取一样的名字，
+另起炉灶也可以，主要是实现这个方法的时候名字一样就可以了 -->
+<my-head title="{{title}}" bind:abc="selectTab"/>
